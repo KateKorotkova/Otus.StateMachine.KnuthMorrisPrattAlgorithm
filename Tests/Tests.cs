@@ -27,11 +27,33 @@ namespace Tests
         }
 
         [Test]
-        public void Cah_Get_P_Function()
+        public void Cah_Get_P_Function_Slowly()
         {
             var pattern = "AABAABAAABA";
 
             var result = new KnuthMorrisPrattAlgorithm().GetPFunctionSlowly(pattern);
+
+            Assert.That(result.Length, Is.EqualTo(pattern.Length + 1));
+            Assert.That(result[0], Is.EqualTo(0));
+            Assert.That(result[1], Is.EqualTo(0));
+            Assert.That(result[2], Is.EqualTo(1));
+            Assert.That(result[3], Is.EqualTo(0));
+            Assert.That(result[4], Is.EqualTo(1));
+            Assert.That(result[5], Is.EqualTo(2));
+            Assert.That(result[6], Is.EqualTo(3));
+            Assert.That(result[7], Is.EqualTo(4));
+            Assert.That(result[8], Is.EqualTo(5));
+            Assert.That(result[9], Is.EqualTo(2));
+            Assert.That(result[10], Is.EqualTo(3));
+            Assert.That(result[11], Is.EqualTo(4));
+        }
+
+        [Test]
+        public void Cah_Get_P_Function_Fast()
+        {
+            var pattern = "AABAABAAABA";
+
+            var result = new KnuthMorrisPrattAlgorithm().GetPFunctionFast(pattern);
 
             Assert.That(result.Length, Is.EqualTo(pattern.Length + 1));
             Assert.That(result[0], Is.EqualTo(0));

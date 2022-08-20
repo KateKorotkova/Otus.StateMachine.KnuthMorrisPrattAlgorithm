@@ -16,6 +16,25 @@
             return p;
         }
 
+        public int[] GetPFunctionFast(string pattern)
+        {
+            var pi = new int[pattern.Length + 1];
+            pi[1] = 0;
+
+            for (var q = 1; q < pattern.Length; q++)
+            {
+                var len = pi[q];
+                while (len > 0 && pattern[len] != pattern[q])
+                    len = pi[len];
+                if (pattern[len] == pattern[q])
+                    len++;
+
+                pi[q + 1] = len;
+            }
+
+            return pi;
+        }
+
         public int GetSinglePValueSlowly(string pattern)
         {
             var maxCounter = 0;
