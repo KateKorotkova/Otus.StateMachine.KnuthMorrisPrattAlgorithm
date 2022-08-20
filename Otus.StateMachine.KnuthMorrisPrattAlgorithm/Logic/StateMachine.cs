@@ -1,4 +1,6 @@
-﻿namespace Otus.StateMachine.KnuthMorrisPrattAlgorithm.Logic
+﻿using System.Security.Cryptography.X509Certificates;
+
+namespace Otus.StateMachine.KnuthMorrisPrattAlgorithm.Logic
 {
     public class StateMachine
     {
@@ -28,17 +30,7 @@
                     var line = subPattern + el;
                     var nextPatternSize = i + 1;
 
-                    string GetPatternLeftPart(int index)
-                    {
-                        return pattern.Length < index ? pattern : pattern.Substring(0, index);
-                    }
-
-                    string GetNewLineRightPart(int index)
-                    {
-                        return line.Length < index ? line : line.Substring(line.Length - index, index);
-                    }
-
-                    while (nextPatternSize != 0 && GetPatternLeftPart(nextPatternSize) != GetNewLineRightPart(nextPatternSize))
+                    while (nextPatternSize != 0 && Utils.GetLeftPart(pattern, nextPatternSize) != Utils.GetRightPart(line, nextPatternSize))
                     {
                         nextPatternSize--;
                     }

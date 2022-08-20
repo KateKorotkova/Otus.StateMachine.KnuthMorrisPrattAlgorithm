@@ -2,5 +2,6 @@
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=59aac46e_002D30c2_002D4936_002D86ab_002De047558ac0d2/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Can_Fine_Substring_Via_State_Machine" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;NUnit3x::137AA67D-D459-4E73-BD4B-CC516737972F::.NETCoreApp,Version=v3.1::Tests.Tests.Can_Fine_Substring_Via_State_Machine&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::137AA67D-D459-4E73-BD4B-CC516737972F::.NETCoreApp,Version=v3.1::Tests.Tests.Can_Get_P_Function_Slowly&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
