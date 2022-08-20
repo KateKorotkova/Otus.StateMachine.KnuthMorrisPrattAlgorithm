@@ -1,6 +1,4 @@
-﻿using System.Security.Cryptography.X509Certificates;
-
-namespace Otus.StateMachine.KnuthMorrisPrattAlgorithm.Logic
+﻿namespace Otus.StateMachine.KnuthMorrisPrattAlgorithm.Logic
 {
     public class StateMachine
     {

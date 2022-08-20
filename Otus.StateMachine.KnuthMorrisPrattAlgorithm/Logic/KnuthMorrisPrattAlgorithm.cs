@@ -1,7 +1,25 @@
-﻿namespace Otus.StateMachine.KnuthMorrisPrattAlgorithm.Logic
+﻿using System.Collections.Generic;
+
+namespace Otus.StateMachine.KnuthMorrisPrattAlgorithm.Logic
 {
     public class KnuthMorrisPrattAlgorithm
     {
+        public int[] Run(string text, string pattern)
+        {
+            var fakeBeginning = $"{pattern}#";
+            var fakePattern = $"{fakeBeginning}{text}";
+            var p = GetPFunctionSlowly(fakePattern);
+
+            var result = new List<int>();
+            for (var i = 0; i < p.Length; i++)
+            {
+                if (p[i] == pattern.Length)
+                    result.Add(i - fakeBeginning.Length - pattern.Length);
+            }
+
+            return result.ToArray();
+        }
+
         public int[] GetPFunctionSlowly(string pattern)
         {
             var p = new int[pattern.Length + 1];

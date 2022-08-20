@@ -69,5 +69,16 @@ namespace Tests
             Assert.That(result[10], Is.EqualTo(3));
             Assert.That(result[11], Is.EqualTo(4));
         }
+
+        [Test]
+        public void Can_Find_Pattern()
+        {
+            var text = "ABAAABAABAAB";
+            var pattern = "AABAAB";
+
+            var result = new KnuthMorrisPrattAlgorithm().Run(text, pattern);
+
+            Assert.That(result, Is.EqualTo(new[] {3, 6}));
+        }
     }
 }
