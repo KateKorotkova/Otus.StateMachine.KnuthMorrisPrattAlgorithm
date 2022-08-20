@@ -1,11 +1,13 @@
-﻿namespace Otus.StateMachine.KnuthMorrisPrattAlgorithm.Logic
+﻿using System.Collections.Generic;
+
+namespace Otus.StateMachine.KnuthMorrisPrattAlgorithm.Logic
 {
     public class StateMachine
     {
         //private string _alphabet = "ABC";
         private string _alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
-        public int Run(string text, string pattern)
+        public int[] Run(string text, string pattern)
         {
             var qTable = GetQTable(pattern);
 
@@ -40,17 +42,19 @@
             return qTable;
         }
 
-        private int GetIndex(string text, string pattern, int[,] qTable)
+        private int[] GetIndex(string text, string pattern, int[,] qTable)
         {
+            var result = new List<int>();
+
             var q = 0;
             for(var i = 0; i < text.Length; i++)
             {
                 q = qTable[q, GetCharacterIndex(text[i])];
                 if (q == pattern.Length)
-                    return i - pattern.Length + 1;
+                    result.Add(i - pattern.Length + 1);
             }
 
-            return -1;
+            return result.Count == 0 ? new [] {-1} : result.ToArray();
         }
 
         private int GetCharacterIndex(char el)

@@ -1,11 +1,6 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=59aac46e_002D30c2_002D4936_002D86ab_002De047558ac0d2/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Can_Fine_Substring_Via_State_Machine" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::137AA67D-D459-4E73-BD4B-CC516737972F::.NETCoreApp,Version=v3.1::Tests.Tests.Can_Fine_Substring_Via_State_Machine&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::137AA67D-D459-4E73-BD4B-CC516737972F::.NETCoreApp,Version=v3.1::Tests.Tests.Can_Get_P_Function_Slowly&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::137AA67D-D459-4E73-BD4B-CC516737972F::.NETCoreApp,Version=v3.1::Tests.Tests.Cah_Get_P_Function&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::137AA67D-D459-4E73-BD4B-CC516737972F::.NETCoreApp,Version=v3.1::Tests.Tests.Can_Get_Single_P_Value_Slowly&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::137AA67D-D459-4E73-BD4B-CC516737972F::.NETCoreApp,Version=v3.1::Tests.Tests.Cah_Get_P_Function_Fast&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::137AA67D-D459-4E73-BD4B-CC516737972F::.NETCoreApp,Version=v3.1::Tests.Tests.Can_Find_Pattern&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::137AA67D-D459-4E73-BD4B-CC516737972F::.NETCoreApp,Version=v3.1::Tests.Tests&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

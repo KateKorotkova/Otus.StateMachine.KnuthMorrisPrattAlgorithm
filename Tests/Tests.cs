@@ -13,7 +13,7 @@ namespace Tests
 
             var result = new StateMachine().Run(text, pattern);
 
-            Assert.That(result, Is.EqualTo(3));
+            Assert.That(result, Is.EqualTo(new[] { 3, 6 }));
         }
 
         [TestCase("AA", ExpectedResult = 1)]
@@ -71,7 +71,7 @@ namespace Tests
         }
 
         [Test]
-        public void Can_Find_Pattern()
+        public void Can_Fine_Substring_Via_KnuthMorrisPratt_Algorithm()
         {
             var text = "ABAAABAABAAB";
             var pattern = "AABAAB";
